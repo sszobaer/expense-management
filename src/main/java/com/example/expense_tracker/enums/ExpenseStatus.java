@@ -1,4 +1,9 @@
 package com.example.expense_tracker.enums;
 
-public class ExpenseStatus {
+public enum ExpenseStatus {
+
+    PENDING,
+    APPROVED,
+    REJECTED,
+    PAID
 }
