@@ -60,6 +60,13 @@ public class SecurityConfig {
                                 )
                                 .permitAll()
 
+                                .requestMatchers(
+                                        "/api/docs/**",
+                                        "/v3/api-docs/**",
+                                        "/v3/api-docs"
+                                )
+                                .permitAll()
+
                                 .anyRequest()
                                 .authenticated()
                 )
